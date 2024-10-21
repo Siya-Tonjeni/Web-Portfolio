@@ -3,6 +3,7 @@ import Navbar from './components/Navbar'
 import HeroSection from './components/HeroSection';
 import SkillsSection from './components/SkillsSection';
 import SkillsOverview from './components/SkillsOverview';
+import Projects from './components/Projects';
 import './index.css'; 
 
 const App = () => {
@@ -12,6 +13,7 @@ const App = () => {
       <HeroSection />
       <SkillsSection/>
       <SkillsOverview/>
+      <Projects/>
     </>
   );
 };
