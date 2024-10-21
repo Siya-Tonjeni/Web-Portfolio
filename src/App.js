@@ -2,7 +2,8 @@ import React from 'react';
 import Navbar from './components/Navbar'
 import HeroSection from './components/HeroSection';
 import SkillsSection from './components/SkillsSection';
-import './index.css'; // Tailwind CSS import
+import SkillsOverview from './components/SkillsOverview';
+import './index.css'; 
 
 const App = () => {
   return (
@@ -10,6 +11,7 @@ const App = () => {
       <Navbar />
       <HeroSection />
       <SkillsSection/>
+      <SkillsOverview/>
     </>
   );
 };
