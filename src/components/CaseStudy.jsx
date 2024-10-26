@@ -19,7 +19,27 @@ import node from '../assets/node.png';
 import javascript from '../assets/javascript.png';
 import figma from '../assets/Figma.png';
 import html from '../assets/html.png';
-
+import CaseStudySolution from './CaseStudySolution';
+import cartVid from '../assets/shopping-cart.mp4';
+import guardVid from '../assets/yellow-guards.mp4';
+import fundVid from '../assets/funda-nam.mp4';
+import liveVid from '../assets/live-feed.mp4';
+import falcoVid from '../assets/falco-holmz.mp4';
+import fantaVid from '../assets/fanta.mp4';
+import cart1 from '../assets/cart-1.png';
+import cart2 from '../assets/cart-2.png';
+import guard1 from '../assets/guard-1.png';
+import guard2 from '../assets/guard-2.png';
+import live1 from '../assets/live-1.png';
+import live2 from '../assets/live-2.png';
+import falco1 from '../assets/falco-1.png';
+import falco2 from '../assets/falco-2.png';
+import CaseStudyDevice from './CaseStudyDevice';
+import CaseStudyLearning from './CaseStudyLearning';
+import fanta1 from '../assets/work-1.png';
+import fanta2 from '../assets/work-1-2.JPG';
+import fund1 from '../assets/work-3-2.JPG';
+import fund2 from '../assets/work-3-3.JPG';
 
 const caseStudyData = {
   'shopping-cart': {
@@ -47,9 +67,16 @@ const caseStudyData = {
       "Inability to update quantities or view total prices in real-time.",
       "Poor mobile shopping experience due to unresponsive design.",
     ],
+    solutions: [
+      { textBefore: 'Include ', emphasis: 'quantity control buttons', textAfter:' (plus and minus) for each cart item to easily adjust quantities.' },
+      { textBefore: 'Provide ', emphasis: 'dynamic total price updates', textAfter:' as the user adjusts item quantities.'  },
+    ],
+    videoDemo: cartVid,
+    imageDevice: [cart1, cart2],
     challenges: 'Implementing dynamic cart updates and payment integration.',
-    results: 'Successfully deployed with real-time cart updates and smooth checkout experience.',
+    learning: 'Building a fully functional shopping cart helped me understand complex state management in JavaScript, including how to efficiently handle quantity changes and update pricing in real time. I gained valuable experience in integrating front-end functionality for a smooth user shopping experience',
     imageHeader: cartImageHeader,
+    link: 'https://mood-cart.netlify.app/'
   },
   'yellow-guards': {
     title: 'Yellow Guards - Security Company',
@@ -76,9 +103,17 @@ const caseStudyData = {
       "Difficulty finding relevant service information and how to contact the company.",
       "Inconsistent user experience on mobile devices.",
     ],
+    solutions: [
+      { textBefore: 'Implement a ', emphasis: 'clear service offering section', textAfter:' to educate visitors about security options.'},
+      { textBefore: 'Provide a ', emphasis: 'responsive layout', textAfter:' to ensure users on all devices can navigate the site easily.'},
+      { textBefore: 'Implement ', emphasis: 'search engine optimization (SEO)', textAfter:' strategies to improve the sites visibility.'},
+    ],
+    videoDemo: guardVid,
+    imageDevice: [guard1, guard2],
     challenges: 'Optimizing for SEO and responsiveness across devices.',
-    results: 'Increased client inquiries by 30% after launch.',
+    learning: 'Developing for a security company emphasized the need for clear, direct communication through design. I learned how to prioritize information architecture, ensuring that the most important services and details were easily accessible. The project also taught me how to effectively collaborate with the owner to meet specific business needs.',
     imageHeader: guardsImageHeader,
+    link: 'https://yellowguards.netlify.app/'
   },
   'funda-nam': {
     title: 'Fund Nam - Educational App',
@@ -105,9 +140,18 @@ const caseStudyData = {
       "Difficulty for students to stay engaged with their learning materials.",
       "Accessibility issues for students with different abilities or learning needs.",
     ],
+    solutions: [
+      { textBefore: 'Implement a ', emphasis: 'personalized dashboard', textAfter:' where students can track their learning progress.'},
+      { textBefore: 'Offer ', emphasis: 'gamified learning experiences', textAfter:' to keep students motivated and engaged with their goals.'},
+      { textBefore: 'Provide ', emphasis: 'adaptive learning paths', textAfter:' based on student performance and preferences.'},
+      { textBefore: 'Design a ', emphasis: 'simplified, intuitive interface', textAfter:' that caters to various learning speeds and styles.'},
+    ],
+    videoDemo: fundVid,
+    imageDevice: [fund1, fund2],
     challenges: 'Designing for accessibility and intuitive navigation for different age groups.',
-    results: 'Boosted student engagement through a seamless and enjoyable learning platform.',
+    learning: 'Creating an educational platform requires a deep understanding of user behavior, particularly for young users or those unfamiliar with technology. I learned how to use user feedback to improve usability, ensuring that the design is both intuitive and engaging. Prototyping were crucial for aligning the stakeholders expectations with the technical and design constraints.',
     imageHeader: fundImageHeader,
+    link: 'https://marvelapp.com/prototype/86f9aj6/screen/90780968'
   },
   'livefeed': {
     title: 'LiveFeed - Real Time App List',
@@ -134,9 +178,17 @@ const caseStudyData = {
       "Delay in real-time updates makes collaboration harder.",
       "Complex user interfaces that slow down the list-sharing process.",
     ],
+    solutions: [
+      { textBefore: 'Provide users the ability to ', emphasis: 'share lists in real-time', textAfter:' via unique URLs without requiring accounts.'},
+      { textBefore: 'Implement ', emphasis: 'real-time synchronization', textAfter:' so users can see updates made to the list instantly.'},
+      { textBefore: 'Allow users to ', emphasis: 'categorize and filter', textAfter:' list items for better organization.'},
+    ],
+    videoDemo: liveVid,
+    imageDevice: [live1, live2],
     challenges: 'Real-time synchronization between users without requiring accounts.',
-    results: 'Enabled seamless list-sharing and task management in real-time.',
+    learning: 'STILL IN PROGRESS',
     imageHeader: liveImageHeader,
+    link: 'https://livefeed.netlify.app/'
   },
   'falco-holmz': {
     title: 'Falco Holmz - Artist Portfolio',
@@ -163,9 +215,18 @@ const caseStudyData = {
       "Potential clients struggle to contact the artist due to a lack of online presence.",
       "Lack of visual appeal in existing platforms to present the artist’s work professionally.",
     ],
+    solutions: [
+      { textBefore: 'Create a ', emphasis: 'minimalist and modern gallery layout', textAfter:' that emphasizes the artwork with minimal distractions.'},
+      { textBefore: 'Implement ', emphasis: 'responsive design', textAfter:' that adjusts seamlessly across different device sizes.'},
+      { textBefore: 'Offer a ', emphasis: 'contact form', textAfter:' that allows potential buyers to get in touch with the artist directly.'},
+      { textBefore: 'Integrate ', emphasis: 'social media sharing options', textAfter:' to increase the artist’s visibility and reach.'},
+    ],
+    videoDemo: falcoVid,
+    imageDevice: [falco1, falco2],
     challenges: 'Building an aesthetic, mobile-responsive website on a limited budget.',
-    results: 'The artist’s work was presented beautifully, attracting more portfolio views.',
+    learning: 'Designing for artists involves balancing aesthetics with functionality. I learned how to work within a limited budget while maintaining a high standard of design and user experience. Additionally, I improved my skills in customizing portfolio pages to reflect the uniqueness of the artist, focusing on responsiveness and visual storytelling.',
     imageHeader: falcoImageHeader,
+    link: 'https://falcoholmz.netlify.app/'
   },
   'fanta': {
     title: 'Fanta - Product Page',
@@ -192,9 +253,17 @@ const caseStudyData = {
       "Users find it hard to access product information or engage with the brand.",
       "Inconsistent branding and visual design, reducing the appeal of the product.",
     ],
+    solutions: [
+      { textBefore: 'Design a ', emphasis: 'interactive product page', textAfter:' with eye-catching visuals and animations to engage users.'},
+      { textBefore: 'Provide ', emphasis: 'customization options', textAfter:' for users to select different flavors or package sizes.'},
+      { textBefore: 'Implement ', emphasis: 'smooth transitions and animations', textAfter:' to enhance the overall user experience.'},
+    ],
+    videoDemo: fantaVid,
+    imageDevice: [fanta1,fanta2],
     challenges: 'Designing a visually captivating page while maintaining simplicity for users.',
-    results: 'Enhanced customer engagement with a user-friendly product page.',
+    learning: 'For a branded product page, maintaining consistency with the brand’s identity while enhancing user interaction was key. I learned how to balance corporate design guidelines with creativity, focusing on improving user engagement through interactive design elements.',
     imageHeader: fantaImageHeader,
+    link: 'https://www.figma.com/proto/QTTQZrahH595LtvOIuPLYs/Fanta?type=design&node-id=23-45&t=9m9y44H8DSFa9ix2-1&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=23%3A106&show-proto-sidebar=1'
   }
 };
 
@@ -213,6 +282,7 @@ function CaseStudy() {
         description={project.description}
         tools={project.tools}
         imageHeader={project.imageHeader}
+        link={project.link}
       />
       <CaseStudyOverview
         overviewText={project.overviewText}
@@ -222,8 +292,16 @@ function CaseStudy() {
         goals={project.goals}
         problems={project.problems}
       />
-      <p>{project.challenges}</p>
-      <p>{project.results}</p>
+      <CaseStudySolution solutions={project.solutions}/>
+
+      <CaseStudyDevice 
+        videoDemo={project.videoDemo}
+        imageDevice={project.imageDevice}
+      />
+      <CaseStudyLearning
+        challenges={project.challenges}
+        learning={project.learning}
+      />
 
     </div>
   );

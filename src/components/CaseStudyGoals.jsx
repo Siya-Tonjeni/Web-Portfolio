@@ -17,7 +17,7 @@ const CaseStudyGoals = ({ goals, problems}) => {
 
       <h2 className="text-purple-600 text-4xl font-bold mt-9 mb-6">User Problems</h2>
       {problems.map((problem, index) => (
-        <ul key={index} className="list-disc list-inside space-y-2 text-lg font-medium p-4">
+        <ul key={index} className="list-disc list-inside space-y-2 text-lg p-4">
         <li>{problem}</li>
         </ul>
       ))}
