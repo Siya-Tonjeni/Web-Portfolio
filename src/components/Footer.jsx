@@ -1,4 +1,6 @@
 import React, { useState } from 'react'; 
+import {FaGithub} from 'react-icons/fa';
+import {FaLinkedin} from 'react-icons/fa';
 
 const Footer = () => {
   const [formData, setFormData] = useState({
@@ -27,24 +29,22 @@ const Footer = () => {
       <div className="flex flex-col items-start md:w-1/2 lg:w-1/3">
         <h2 className="text-4xl font-bold">Let’s work together</h2>
         <p className="mt-4 text-gray-600">
-          This is a template Figma file, turned into code using Anima. Learn more at AnimaApp.com.
+          I'm always open and on the look out for new opportunities with designers, developers, product managers or let's just connect and chat!
         </p>
+        <br/>
+        <p className="text-gray-700 hover:text-gray-900">
+            tonjenisiya@gmail.com
+          </p>
+          <p className="text-gray-700 hover:text-gray-900">
+            0744332374
+          </p>
         
         <div className="flex gap-4 mt-6">
-          <a href="#" className="text-gray-700 hover:text-gray-900">
-            <i className="fab fa-discord text-xl"></i>
+          <a href="https://github.com/Siya-Tonjeni" className="text-gray-700 hover:text-gray-900">
+            <FaGithub/>
           </a>
-          <a href="#" className="text-gray-700 hover:text-gray-900">
-            <i className="fab fa-facebook text-xl"></i>
-          </a>
-          <a href="#" className="text-gray-700 hover:text-gray-900">
-            <i className="fab fa-dribbble text-xl"></i>
-          </a>
-          <a href="#" className="text-gray-700 hover:text-gray-900">
-            <i className="fab fa-instagram text-xl"></i>
-          </a>
-          <a href="#" className="text-gray-700 hover:text-gray-900">
-            <i className="fab fa-behance text-xl"></i>
+          <a href="https://www.linkedin.com/in/siya-tonjeni" className="text-gray-700 hover:text-gray-900">
+            <FaLinkedin/>
           </a>
         </div>
       </div>
