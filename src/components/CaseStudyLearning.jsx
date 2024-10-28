@@ -17,7 +17,7 @@ const CaseStudyLearning = ({challenges, learning}) => {
         <p className="text-lg leading-relaxed mb-4">
           {challenges}
         </p>
-        <p className="text-lg leading-relaxed">
+        <p className="text-lg leading-relaxed py-4 px-20">
           {learning}
         </p>
       </div>

@@ -1,33 +1,17 @@
-// import React from 'react';
-
-// const CaseStudyHeader = ({ title, description, tools, imageHeader }) => {
-//   return (
-//     <header className="bg-purple-600 py-12">
-//       <div className="container mx-auto px-4 flex flex-col items-center text-center">
-//         <div className="w-full md:w-1/2">
-//           <h1 className="text-5xl font-bold text-white mb-4">{title}</h1>
-//           <p className="text-lg text-white mb-8">{description}</p>
-//           <div className="bg-white inline-block rounded-lg py-2 px-4">
-//             <span className="text-sm text-purple-600 font-semibold">Tools Used:</span>
-//             <span className="ml-2 text-purple-600">{tools}</span>
-//           </div>
-//         </div>
-//         <div className="mt-12">
-//           <img src={imageHeader} alt={`${title} Mockups`} className="max-w-full" />
-//         </div>
-//       </div>
-//     </header>
-//   );
-// };
-
-// export default CaseStudyHeader;
-
-
 import React from 'react';
+import {useNavigate} from 'react-router-dom';
+import {IoIosArrowBack} from 'react-icons/io';
 
 const CaseStudyHeader = ({ title, description, tools, imageHeader , link}) => {
+  const navigate = useNavigate();
+
+  const handleRedirect = () => {
+    navigate('/#Projects'); 
+  };
+
   return (
     <header className="bg-purple-600 py-12">
+    <IoIosArrowBack onClick={handleRedirect} className='w-20 text-white text-3xl hover:text-4xl'/>
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           
