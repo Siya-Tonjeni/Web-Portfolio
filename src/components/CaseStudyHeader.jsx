@@ -18,12 +18,10 @@ const CaseStudyHeader = ({ title, description, tools, imageHeader, link }) => {
         />
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           
-          {/* Text Section */}
           <div className="text-center md:text-left">
             <h1 className="text-3xl md:text-5xl font-bold text-white mb-4">{title}</h1>
             <p className="text-base md:text-lg text-white mb-8">{description}</p>
             
-            {/* Tools Used Section */}
             <div className="inline-block py-2 px-4">
               <span className="text-base md:text-lg text-white font-semibold">Tools Used:</span>
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 mt-4">
@@ -36,8 +34,7 @@ const CaseStudyHeader = ({ title, description, tools, imageHeader, link }) => {
                 ))}
               </div>
             </div>
-            
-            {/* Visit Project Button */}
+          
             <div className="mt-4 md:mt-6">
               <a 
                 href={link} 
@@ -50,7 +47,7 @@ const CaseStudyHeader = ({ title, description, tools, imageHeader, link }) => {
             </div>
           </div>
           
-          {/* Image Section */}
+
           <div className="flex justify-center">
             <img 
               src={imageHeader} 
