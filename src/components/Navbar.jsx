@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import Resume from '../assets/Siya Tonjeni - Resume.pdf';
 
 const Navbar = () => {
   return (
@@ -10,7 +11,7 @@ const Navbar = () => {
           <li><Link to='/about' className="hover:text-gray-400">About</Link></li>
           <li><Link to='/projects' className="hover:text-gray-400 cursor-pointer">Work</Link></li>
           <li><Link to='/contact' className="hover:text-gray-400 cursor-pointer">Contact</Link></li>
-          <li><a href= '#resume' className="hover:text-gray-400 cursor-pointer">Resume</a></li>
+          <li><a href={Resume} target="_blank" rel="noopener noreferrer" className='hover:text-gray-400 cursor-pointer'>Resume</a></li>
         </ul>
       </div>
     </nav>
