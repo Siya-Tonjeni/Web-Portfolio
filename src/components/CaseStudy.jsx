@@ -40,6 +40,18 @@ import fanta1 from '../assets/work-1.png';
 import fanta2 from '../assets/work-1-2.JPG';
 import fund1 from '../assets/work-3-2.JPG';
 import fund2 from '../assets/work-3-3.JPG';
+import delfCover from '../assets/deflf-cover.png';
+import delf1 from '../assets/delf-device1.png';
+import delf2 from '../assets/delf-device2.png';
+import delfVid from '../assets/delf-vid.mp4';
+import kingCover from '../assets/kingsley.png';
+import king1 from '../assets/king-2.png';
+import king2 from '../assets/king-3.png';
+import kingVid from '../assets/kingsley-vid.mp4';
+import mixieCover from '../assets/mixie.png';
+import mixie1 from '../assets/mixie-2.png';
+import mixie2 from '../assets/mixie-3.png';
+import mixieVid from '../assets/mixie-vid.mp4';
 
 const caseStudyData = {
   'shopping-cart': {
@@ -264,7 +276,117 @@ const caseStudyData = {
     learning: 'For a branded product page, maintaining consistency with the brand’s identity while enhancing user interaction was key. I learned how to balance corporate design guidelines with creativity, focusing on improving user engagement through interactive design elements.',
     imageHeader: fantaImageHeader,
     link: 'https://www.figma.com/proto/QTTQZrahH595LtvOIuPLYs/Fanta?type=design&node-id=23-45&t=9m9y44H8DSFa9ix2-1&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=23%3A106&show-proto-sidebar=1'
-  }
+  },
+  'Mixie': {
+    title: 'Mixie - Baking AI',
+    description: 'A web application for an e-commerce platform allowing users to add items to their cart and checkout.',
+    tools: [figma ],
+    overviewText: 'The Shopping Cart project is an e-commerce solution designed to enhance the online shopping experience through a simple and intuitive interface.',
+    problemText: 'Online shoppers often face confusion and frustration due to poorly designed shopping carts with complex or slow user interfaces. Many carts do not reflect real-time updates, leading to user dissatisfaction.',
+    goals: [
+      {
+        icon: Icon1,
+        description: 'Provide users with an easy checkout process, improving conversion rates.'
+      },
+      {
+        icon: Icon2,
+        description: 'Develop a user-friendly shopping cart interface that allows users to view and manage items seamlessly.'
+      },
+      {
+        icon: Icon3,
+        description: 'Enable real-time updates to the cart as users add, remove, or change the quantity of items.'
+      }
+    ],
+    problems: [
+      "Difficulty tracking and adjusting items in the cart while shopping.",
+      "Inability to update quantities or view total prices in real-time.",
+      "Poor mobile shopping experience due to unresponsive design.",
+    ],
+    solutions: [
+      { textBefore: 'Include ', emphasis: 'quantity control buttons', textAfter:' (plus and minus) for each cart item to easily adjust quantities.' },
+      { textBefore: 'Provide ', emphasis: 'dynamic total price updates', textAfter:' as the user adjusts item quantities.'  },
+    ],
+    videoDemo: mixieVid,
+    imageDevice: [mixie1, mixie2],
+    challenges: 'Implementing dynamic cart updates and payment integration.',
+    learning: 'Building a fully functional shopping cart helped me understand complex state management in JavaScript, including how to efficiently handle quantity changes and update pricing in real time. I gained valuable experience in integrating front-end functionality for a smooth user shopping experience',
+    imageHeader: mixieCover,
+    link: 'https://mood-cart.netlify.app/'
+  },
+  'kingsley': {
+    title: 'Kingsley - Drinks Company',
+    description: 'A security solutions company website showcasing services, and enabling contact and quotation requests.',
+    tools: [figma],
+    overviewText: 'Yellow Guards is a website developed for a security company that provides residential and commercial security solutions.',
+    problemText: 'Many small security companies struggle to differentiate themselves online due to poorly designed websites that fail to convey trust and professionalism. Yellow Guards needed a platform that would not only showcase their services effectively but also build credibility with potential clients.',
+    goals: [
+      {
+        icon: Icon1,
+        description: 'Ensure the website is optimized for search engines (SEO) to attract more traffic.'
+      },
+      {
+        icon: Icon2,
+        description: 'Create a secure, professional website to represent the Yellow Guards security company'
+      },
+      {
+        icon: Icon3,
+        description: 'Provide clear information on services and contact details to potential clients.'
+      }
+    ],
+    problems: [
+      "Lack of trust due to poor online presence and lack of a professional website.",
+      "Difficulty finding relevant service information and how to contact the company.",
+      "Inconsistent user experience on mobile devices.",
+    ],
+    solutions: [
+      { textBefore: 'Implement a ', emphasis: 'clear service offering section', textAfter:' to educate visitors about security options.'},
+      { textBefore: 'Provide a ', emphasis: 'responsive layout', textAfter:' to ensure users on all devices can navigate the site easily.'},
+      { textBefore: 'Implement ', emphasis: 'search engine optimization (SEO)', textAfter:' strategies to improve the sites visibility.'},
+    ],
+    videoDemo: kingVid,
+    imageDevice: [king1, king2],
+    challenges: 'Optimizing for SEO and responsiveness across devices.',
+    learning: 'Developing for a security company emphasized the need for clear, direct communication through design. I learned how to prioritize information architecture, ensuring that the most important services and details were easily accessible. The project also taught me how to effectively collaborate with the owner to meet specific business needs.',
+    imageHeader: kingCover,
+    link: 'https://yellowguards.netlify.app/'
+  },
+  'delf': {
+    title: 'Delf.Co - Social Media Data Collector',
+    description: 'A security solutions company website showcasing services, and enabling contact and quotation requests.',
+    tools: [react, tailwind, node],
+    overviewText: 'Yellow Guards is a website developed for a security company that provides residential and commercial security solutions.',
+    problemText: 'Many small security companies struggle to differentiate themselves online due to poorly designed websites that fail to convey trust and professionalism. Yellow Guards needed a platform that would not only showcase their services effectively but also build credibility with potential clients.',
+    goals: [
+      {
+        icon: Icon1,
+        description: 'Ensure the website is optimized for search engines (SEO) to attract more traffic.'
+      },
+      {
+        icon: Icon2,
+        description: 'Create a secure, professional website to represent the Yellow Guards security company'
+      },
+      {
+        icon: Icon3,
+        description: 'Provide clear information on services and contact details to potential clients.'
+      }
+    ],
+    problems: [
+      "Lack of trust due to poor online presence and lack of a professional website.",
+      "Difficulty finding relevant service information and how to contact the company.",
+      "Inconsistent user experience on mobile devices.",
+    ],
+    solutions: [
+      { textBefore: 'Implement a ', emphasis: 'clear service offering section', textAfter:' to educate visitors about security options.'},
+      { textBefore: 'Provide a ', emphasis: 'responsive layout', textAfter:' to ensure users on all devices can navigate the site easily.'},
+      { textBefore: 'Implement ', emphasis: 'search engine optimization (SEO)', textAfter:' strategies to improve the sites visibility.'},
+    ],
+    videoDemo: delfVid,
+    imageDevice: [delf1, delf2],
+    challenges: 'Optimizing for SEO and responsiveness across devices.',
+    learning: 'Developing for a security company emphasized the need for clear, direct communication through design. I learned how to prioritize information architecture, ensuring that the most important services and details were easily accessible. The project also taught me how to effectively collaborate with the owner to meet specific business needs.',
+    imageHeader: delfCover,
+    link: 'https://yellowguards.netlify.app/'
+  },
 };
 
 function CaseStudy() {

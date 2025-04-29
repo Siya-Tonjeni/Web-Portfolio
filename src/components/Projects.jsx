@@ -6,9 +6,30 @@ import project3 from '../assets/project3.png';
 import project4 from '../assets/project4.png';
 import project5 from '../assets/project5.PNG';
 import project6 from '../assets/project6.JPG';
+import project7 from '../assets/mixie-1.png';
+import project8 from '../assets/delf.png';
+import project9 from '../assets/king-1.png';
 
 const Projects = () => {
   const projectData = [
+    {
+      slug: 'mixie',
+      title: 'Mixie',
+      artist: 'UX/UI Design',
+      image: project7,
+    },
+    {
+      slug: 'delf',
+      title: 'Delf.Co',
+      artist: 'Web Development',
+      image: project8,
+    },
+    {
+      slug: 'kingsley',
+      title: 'Kingsley',
+      artist: 'UX/UI Design',
+      image: project9,
+    },
     {
       slug: 'shopping-cart',
       title: 'Shopping Cart',
