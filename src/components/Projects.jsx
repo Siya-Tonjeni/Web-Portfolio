@@ -19,8 +19,8 @@ const Projects = () => {
       image: project7,
     },
     {
-      slug: 'delf',
-      title: 'Delf.Co',
+      slug: 'deft',
+      title: 'Deft.Co',
       artist: 'Web Development',
       image: project8,
     },

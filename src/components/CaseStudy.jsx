@@ -277,115 +277,116 @@ const caseStudyData = {
     imageHeader: fantaImageHeader,
     link: 'https://www.figma.com/proto/QTTQZrahH595LtvOIuPLYs/Fanta?type=design&node-id=23-45&t=9m9y44H8DSFa9ix2-1&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=23%3A106&show-proto-sidebar=1'
   },
-  'Mixie': {
+  'mixie': {
     title: 'Mixie - Baking AI',
-    description: 'A web application for an e-commerce platform allowing users to add items to their cart and checkout.',
+    description: 'A conceptual AI-powered food recommendation platform that tailors meal suggestions based on user preferences, dietary needs, and real-time mood detection.',
     tools: [figma ],
-    overviewText: 'The Shopping Cart project is an e-commerce solution designed to enhance the online shopping experience through a simple and intuitive interface.',
-    problemText: 'Online shoppers often face confusion and frustration due to poorly designed shopping carts with complex or slow user interfaces. Many carts do not reflect real-time updates, leading to user dissatisfaction.',
+    overviewText: 'Mixie is a concept design for an AI-powered food recommendation platform that customizes suggestions based on users’ dietary needs, taste preferences, and mood detection. I led the end-to-end UX/UI design for a responsive mobile-first experience.',
+    problemText: 'People often struggle to decide what to eat based on how they feel or what’s available. Existing apps rarely personalize recommendations with emotional or health context.',
     goals: [
       {
         icon: Icon1,
-        description: 'Provide users with an easy checkout process, improving conversion rates.'
+        description: 'Design a user-friendly interface that makes food discovery easy and fun'
       },
       {
         icon: Icon2,
-        description: 'Develop a user-friendly shopping cart interface that allows users to view and manage items seamlessly.'
+        description: 'Explore AI-driven personalization in a UX-friendly way'
       },
       {
         icon: Icon3,
-        description: 'Enable real-time updates to the cart as users add, remove, or change the quantity of items.'
+        description: 'Prioritize accessibility and simplicity in the flow'
       }
     ],
     problems: [
-      "Difficulty tracking and adjusting items in the cart while shopping.",
-      "Inability to update quantities or view total prices in real-time.",
-      "Poor mobile shopping experience due to unresponsive design.",
+      "I don't know what I feel like eating.",
+      "Meal apps don’t consider how I’m feeling or my dietary needs.",
+      "Too many apps are cluttered or overwhelming.",
     ],
     solutions: [
-      { textBefore: 'Include ', emphasis: 'quantity control buttons', textAfter:' (plus and minus) for each cart item to easily adjust quantities.' },
-      { textBefore: 'Provide ', emphasis: 'dynamic total price updates', textAfter:' as the user adjusts item quantities.'  },
+      { textBefore: 'A ', emphasis: 'Mood-selector', textAfter:' onboarding and filters' },
+      { textBefore: 'AI tag-based ', emphasis: 'food matches ', textAfter:' with contextual suggestions'  },
+      { textBefore: 'Minimal, ', emphasis: 'calming UI', textAfter:' with large imagery and swipes'  },
     ],
     videoDemo: mixieVid,
     imageDevice: [mixie1, mixie2],
-    challenges: 'Implementing dynamic cart updates and payment integration.',
-    learning: 'Building a fully functional shopping cart helped me understand complex state management in JavaScript, including how to efficiently handle quantity changes and update pricing in real time. I gained valuable experience in integrating front-end functionality for a smooth user shopping experience',
+    challenges: 'One major challenge was defining how mood and emotion could be realistically integrated without overwhelming the user. Designing flows that felt personal but not intrusive required careful UX decisions. Another hurdle was ensuring the app remained lightweight and clean while including rich options.',
+    learning: 'Designing Mixie taught me how emotional context can influence user experience. I explored mood-based UX strategies and learned how to simplify decision-heavy processes with intuitive navigation and visual storytelling. I also deepened my understanding of accessibility and how to reduce cognitive load, especially for mobile users. This project highlighted how crucial it is to align user needs with elegant, purposeful UI choices.',
     imageHeader: mixieCover,
-    link: 'https://mood-cart.netlify.app/'
+    link: 'https://www.figma.com/proto/E2ZUUWP75dIXzO0QyDEyMF/Mixie?node-id=1-3&t=zGJ51Sp4xeBCiDnF-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1'
   },
   'kingsley': {
     title: 'Kingsley - Drinks Company',
-    description: 'A security solutions company website showcasing services, and enabling contact and quotation requests.',
+    description: 'A modern redesign for Kingsley, a local beverage brand, focusing on enhancing brand personality and product discoverability.',
     tools: [figma],
-    overviewText: 'Yellow Guards is a website developed for a security company that provides residential and commercial security solutions.',
-    problemText: 'Many small security companies struggle to differentiate themselves online due to poorly designed websites that fail to convey trust and professionalism. Yellow Guards needed a platform that would not only showcase their services effectively but also build credibility with potential clients.',
+    overviewText: 'Kingsley is a local drinks brand. This redesign project focused on elevating the user experience and aligning the website with a bold, youthful brand image. I redesigned key pages and components.',
+    problemText: 'The original website lacked visual appeal and modern usability, making it hard for users to explore products or understand the brand.',
     goals: [
       {
         icon: Icon1,
-        description: 'Ensure the website is optimized for search engines (SEO) to attract more traffic.'
+        description: 'Redesign homepage and product pages'
       },
       {
         icon: Icon2,
-        description: 'Create a secure, professional website to represent the Yellow Guards security company'
+        description: 'Reflect the bold, vibrant brand personality'
       },
       {
         icon: Icon3,
-        description: 'Provide clear information on services and contact details to potential clients.'
+        description: 'Make mobile experience smooth and attractive'
       }
     ],
     problems: [
-      "Lack of trust due to poor online presence and lack of a professional website.",
-      "Difficulty finding relevant service information and how to contact the company.",
-      "Inconsistent user experience on mobile devices.",
+      "The website looks outdated and clunky.",
+      "I can’t find product information easily.",
+      "It doesn’t work well on my phone.",
     ],
     solutions: [
-      { textBefore: 'Implement a ', emphasis: 'clear service offering section', textAfter:' to educate visitors about security options.'},
-      { textBefore: 'Provide a ', emphasis: 'responsive layout', textAfter:' to ensure users on all devices can navigate the site easily.'},
-      { textBefore: 'Implement ', emphasis: 'search engine optimization (SEO)', textAfter:' strategies to improve the sites visibility.'},
+      { textBefore: 'A ', emphasis: 'Product-focused', textAfter:' hero section and categories'},
+      { textBefore: 'Simplified navigation and ', emphasis: 'better layout', textAfter:' spacing'},
+      { textBefore: 'A ', emphasis: 'Mobile-first design', textAfter:' principles applied throughout'},
     ],
     videoDemo: kingVid,
     imageDevice: [king1, king2],
-    challenges: 'Optimizing for SEO and responsiveness across devices.',
-    learning: 'Developing for a security company emphasized the need for clear, direct communication through design. I learned how to prioritize information architecture, ensuring that the most important services and details were easily accessible. The project also taught me how to effectively collaborate with the owner to meet specific business needs.',
+    challenges: 'Working within a limited color scheme while keeping the design fresh required creative thinking. It was also challenging to prioritize content hierarchy with a heavy emphasis on visuals. Ensuring legibility and brand consistency across devices took multiple iterations.',
+    learning: 'The Kingsley redesign project reinforced the value of branding in UX design. I learned how small details—like consistent typography, white space, and button styling—can dramatically affect user trust and brand perception. This project also improved my ability to translate brand guidelines into functional, attractive components, and sharpened my skill in presenting clear user flows that guide visitors through a bold yet clean interface.',
     imageHeader: kingCover,
-    link: 'https://yellowguards.netlify.app/'
+    link: 'https://www.figma.com/proto/PoQZhrazOWIvbBr7LDvnlQ/Kingsley-Beverages-Website-Redesign?node-id=58-1039&t=0BtQdxusxoNKIbT9-1&scaling=min-zoom&content-scaling=fixed&page-id=2%3A5'
   },
-  'delf': {
-    title: 'Delf.Co - Social Media Data Collector',
-    description: 'A security solutions company website showcasing services, and enabling contact and quotation requests.',
+  'deft': {
+    title: 'Deft.Co - Social Media Data Collector',
+    description: 'A responsive dashboard web app that consolidates analytics from various social platforms (Instagram, Twitter/X, TikTok, etc.) into one clean interface for users to monitor their social growth.',
     tools: [react, tailwind, node],
-    overviewText: 'Yellow Guards is a website developed for a security company that provides residential and commercial security solutions.',
-    problemText: 'Many small security companies struggle to differentiate themselves online due to poorly designed websites that fail to convey trust and professionalism. Yellow Guards needed a platform that would not only showcase their services effectively but also build credibility with potential clients.',
+    overviewText: 'Deft.co is a social media management web app that helps users view insights across different platforms in one dashboard. I developed the frontend using React and Tailwind CSS with interactive charts and components.',
+    problemText: 'Content creators and businesses struggle to track their social performance due to switching between multiple platforms with inconsistent interfaces.',
     goals: [
       {
         icon: Icon1,
-        description: 'Ensure the website is optimized for search engines (SEO) to attract more traffic.'
+        description: 'Build a clean dashboard UI for unified analytics'
       },
       {
         icon: Icon2,
-        description: 'Create a secure, professional website to represent the Yellow Guards security company'
+        description: 'Make it responsive and user-friendly'
       },
       {
         icon: Icon3,
-        description: 'Provide clear information on services and contact details to potential clients.'
+        description: 'Visualize data using engaging charts'
       }
     ],
     problems: [
-      "Lack of trust due to poor online presence and lack of a professional website.",
-      "Difficulty finding relevant service information and how to contact the company.",
-      "Inconsistent user experience on mobile devices.",
+      "It's hard to track my growth across platforms.",
+      "Analytics tools are either too complex or limited.",
+      "I need to manage and view everything in one place.",
     ],
     solutions: [
-      { textBefore: 'Implement a ', emphasis: 'clear service offering section', textAfter:' to educate visitors about security options.'},
-      { textBefore: 'Provide a ', emphasis: 'responsive layout', textAfter:' to ensure users on all devices can navigate the site easily.'},
-      { textBefore: 'Implement ', emphasis: 'search engine optimization (SEO)', textAfter:' strategies to improve the sites visibility.'},
+      { textBefore: 'One dashboard for ', emphasis: 'all platforms', textAfter:' (Instagram, X, TikTok, etc.)'},
+      { textBefore: 'Simple data ', emphasis: 'cards + visual charts', textAfter:' for key metrics'},
+      { textBefore: 'Login system to ', emphasis: 'save and revisit', textAfter:' data'},
     ],
     videoDemo: delfVid,
     imageDevice: [delf1, delf2],
-    challenges: 'Optimizing for SEO and responsiveness across devices.',
-    learning: 'Developing for a security company emphasized the need for clear, direct communication through design. I learned how to prioritize information architecture, ensuring that the most important services and details were easily accessible. The project also taught me how to effectively collaborate with the owner to meet specific business needs.',
+    challenges: 'Integrating dynamic chart components without bloating the UI was challenging. Balancing performance with interactivity, especially on smaller screens, meant optimizing both logic and layout. Testing responsiveness across multiple breakpoints was key to success.',
+    learning: 'While building Deft.co, I expanded my knowledge of frontend development best practices, especially around handling dynamic data and designing with scalability in mind. Working with charts taught me the importance of clean data visualization and accessibility, while responsive grid systems pushed me to think carefully about layout behavior on different devices. I also became more comfortable using Tailwind CSS utilities to streamline development without sacrificing design consistency.',
     imageHeader: delfCover,
-    link: 'https://yellowguards.netlify.app/'
+    link: 'https://deftco.netlify.app/'
   },
 };
 

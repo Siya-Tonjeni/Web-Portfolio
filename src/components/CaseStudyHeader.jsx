@@ -10,7 +10,7 @@ const CaseStudyHeader = ({ title, description, tools, imageHeader, link }) => {
   };
 
   return (
-    <header className="bg-purple-600 py-6 md:py-12">
+    <header className="bg-purple-300 py-6 md:py-12">
       <div className="container mx-auto px-4">
         <IoIosArrowBack 
           onClick={handleRedirect} 
