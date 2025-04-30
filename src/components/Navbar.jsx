@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-import Resume from '../assets/Siya Tonjeni - Resume.pdf';
+import Resume from '../assets/Siyamtanda_Tonjeni_CV.pdf';
 
 const Navbar = () => {
   return (
