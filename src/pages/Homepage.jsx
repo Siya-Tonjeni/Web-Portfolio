@@ -17,7 +17,7 @@ const Homepage = () => {
   }, []);
     return (
         <>
-          <Navbar/>
+           <Navbar/> 
           <HeroSection />
           <SkillsSection/>
           <SkillsOverview/>

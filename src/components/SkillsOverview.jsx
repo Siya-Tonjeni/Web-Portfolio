@@ -1,37 +1,34 @@
-import React from 'react';
-import uxImage from '../assets/design.png'; 
-import webDevImage from '../assets/web-developer.png';
+import React from "react";
+import uxImage from "../assets/design.png";
+import webDevImage from "../assets/web-developer.png";
 
 const SkillsOverview = () => {
   return (
-    <section className="py-12 bg-gray-50">
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 text-center">
+    <section className="py-20 bg-gradient-to-b from-white to-gray-100">
+      <div className="max-w-6xl mx-auto px-6">
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           
-          <div className="flex flex-col items-center">
-            <img 
-              src={uxImage} 
-              alt="UX/UI Design" 
-              className="mb-6"
-            />
-            <h3 className="text-xl font-bold mb-4">UX/UI Design</h3>
-            <p className="text-gray-600 w-1/2">
-              Designing intuitive, user-friendly interfaces with a focus on seamless user experiences.
+          {/* CARD 1 */}
+          <div className="backdrop-blur-xl bg-white/40 border border-white/30 shadow-xl rounded-3xl p-10 text-center transition-transform hover:-translate-y-2">
+            <img src={uxImage} alt="UX/UI Design" className="w-32 mx-auto mb-6" />
+            <h3 className="text-2xl font-bold mb-3">UX/UI Design</h3>
+            <p className="text-gray-700 leading-relaxed">
+              Crafting intuitive, user-centered interfaces that create seamless and enjoyable digital experiences.
             </p>
           </div>
-    
-          <div className="flex flex-col items-center">
-            <img 
-              src={webDevImage} 
-              alt="Web Development" 
-              className="mb-6"
-            />
-            <h3 className="text-xl font-bold mb-4">Web Developer</h3>
-            <p className="text-gray-600 w-1/2">
-              Building responsive, high-performance websites using modern web technologies.
+
+          {/* CARD 2 */}
+          <div className="backdrop-blur-xl bg-white/40 border border-white/30 shadow-xl rounded-3xl p-10 text-center transition-transform hover:-translate-y-2">
+            <img src={webDevImage} alt="Web Development" className="w-32 mx-auto mb-6" />
+            <h3 className="text-2xl font-bold mb-3">Web Development</h3>
+            <p className="text-gray-700 leading-relaxed">
+              Developing responsive, high-performance websites using modern frameworks and best practices.
             </p>
           </div>
+
         </div>
+
       </div>
     </section>
   );
